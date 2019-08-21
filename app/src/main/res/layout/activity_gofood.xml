@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gofood">
+<ImageView
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/menu_gofood"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Food"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#43A047"
+        android:layout_marginBottom="30dp"/>
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textnama"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama "
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/edittextnama"
+            android:layout_marginLeft="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi Nama"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/textnama"/>
+        <TextView
+            android:id="@+id/textalamat"
+            android:layout_below="@id/textnama"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat "
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/edittextalamat"
+            android:layout_marginLeft="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi Alamat"
+            android:textSize="20dp"
+            android:layout_below="@id/edittextnama"
+            android:layout_toRightOf="@id/textalamat"/>
+        <TextView
+            android:id="@+id/textpesan"
+            android:layout_below="@id/textalamat"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan "
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/edittextpesan"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi Pesanan"
+            android:textSize="20dp"
+            android:layout_below="@id/edittextalamat"
+            android:layout_toRightOf="@id/textpesan"/>
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="20dp"
+            android:text="Order"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#43A047"
+            android:layout_below="@id/edittextpesan"/>
+    </RelativeLayout>
+</LinearLayout>
